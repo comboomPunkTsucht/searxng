@@ -41,6 +41,9 @@ source "$(dirname "${BASH_SOURCE[0]}")/utils/lib_valkey.sh"
 # shellcheck source=utils/lib_sxng_vite.sh
 source "$(dirname "${BASH_SOURCE[0]}")/utils/lib_sxng_vite.sh"
 
+# shellcheck source=utils/lib_sxng_vite.sh
+source "$(dirname "${BASH_SOURCE[0]}")/utils/lib_sxng_vite_cbps.sh"
+
 # add ./local dev tools from python (virtualenv), golang and nodejs
 PATH="${PY_ENV}/bin:${REPO_ROOT}/node_modules/.bin:${GOROOT}/bin:${GOPATH}/bin:${PATH}"
 
